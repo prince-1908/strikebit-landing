@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: black;
     --foreground: #ededed;
   }
 }
@@ -24,4 +24,33 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bg-blue {
+  background-color: #1214fd;
+}
+
+.bg-blue-light-hover:hover{
+  background-color: #1216fd21;
+}
+
+.border-blue {
+  border: 2px solid #1214fd;
+}
+
+.text-blue {
+  color: #1214fd;
+}
+
+.bg-gray{
+  background-color: #151519;
+}
+
+.gradient-circle {
+  background: radial-gradient(
+    circle at top left,
+    rgba(254, 209, 76, 1) 15%,
+    rgba(246, 115, 12, 1) 5%,
+    rgba(5, 0, 207, 1) 80%
+  );
 }
