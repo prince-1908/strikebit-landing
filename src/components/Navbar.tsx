@@ -49,18 +49,13 @@ export const Navbar = () => {
                     width={100}
                 />
                 <div className=''>
-                    <Button
-                        sx={{
-                            display: "flex",
-                            gap: "10px",
-                            borderRadius: "0"
-                        }}
-                        className='bg-white text-blue flex px-4 py-4'
+                    <button
+                        className='gap-[10px] flex justify-center items-center bg-white text-blue px-7 py-4'
                         onClick={closeDrawer}
                     >
                         <p className='flex items-center justify-center font-semibold'>Close</p>
                         <X />
-                    </Button>
+                    </button>
                 </div>
             </div>
 
@@ -103,32 +98,19 @@ export const Navbar = () => {
             />
 
             <div className='flex gap-4'>
-                <Button
-                    sx={{
-                        color: "white",
-                        display: "flex",
-                        gap: "10px",
-                        borderRadius: "0",
-                        border: "1px solid rgba(0, 0, 0, 0.2)"
-                    }}
-                    className='border border-white/20 px-7 py-4'
+                <button
+                    className='text-white flex gap-[10px] rounded-none border border-white/20 px-7 py-4'
                 >
                     中文
-                </Button>
+                </button>
 
-                <Button
-                    sx={{
-                        color: "white",
-                        display: "flex",
-                        gap: "10px",
-                        borderRadius: "0"
-                    }}
-                    className='bg-blue flex px-4'
+                <button
+                    className='gap-[10px] flex justify-center items-center blue-btn'
                     onClick={toggleDrawer(true)}
                 >
                     <p className='flex items-center justify-center font-semibold'>Menu</p>
                     <Menu />
-                </Button>
+                </button>
                 <Drawer
                     sx={{
                         '& .MuiDrawer-paper': {

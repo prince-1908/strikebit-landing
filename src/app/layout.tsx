@@ -4,7 +4,7 @@ import "./globals.css";
 
 const archivo = Archivo({
   weight: ['400', '700'],
-  subsets: ['latin'],  
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logo1.svg" sizes="any" />
+      </head>
       <body
         className={archivo.className}
       >

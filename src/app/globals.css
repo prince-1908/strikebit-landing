@@ -26,11 +26,16 @@ body {
   }
 }
 
+.radiant-node-bg {
+  background-image: url("/radiant-node-bg.svg");
+  background-repeat: no-repeat;
+}
+
 .bg-blue {
   background-color: #1214fd;
 }
 
-.bg-blue-light-hover:hover{
+.bg-blue-light-hover:hover {
   background-color: #1216fd21;
 }
 
@@ -42,15 +47,44 @@ body {
   color: #1214fd;
 }
 
-.bg-gray{
+.bg-gray {
   background-color: #151519;
 }
 
 .gradient-circle {
-  background: radial-gradient(
-    circle at top left,
-    rgba(254, 209, 76, 1) 15%,
-    rgba(246, 115, 12, 1) 5%,
-    rgba(5, 0, 207, 1) 80%
-  );
+  background: radial-gradient(circle at top left,
+      rgba(254, 209, 76, 1) 15%,
+      rgba(246, 115, 12, 1) 5%,
+      rgba(5, 0, 207, 1) 80%);
+}
+
+.white-btn {
+  background-color: white;
+  color: #1214fd;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+.blue-btn{
+  background-color: #1214fd;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+.light-gradient {
+  background: rgb(67, 77, 174);
+  background: linear-gradient(135deg, rgba(67, 77, 174, 1) 0%, rgba(40, 126, 176, 1) 100%);
+}
+
+.gradient-text-1 {
+  background: linear-gradient(135deg, #3764A8, #21ACA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-2 {
+  background: linear-gradient(135deg, #667EBE, #908BAC, #9C6E5A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -6,7 +6,7 @@ export const Product = () => {
         <div className='h-screen bg-gray p-32 flex justify-center items-center' id='product'>
             <div className='flex w-full h-full'>
                 <Image
-                    src="/product.png"
+                    src="/our-product.svg"
                     alt=''
                     height={1000}
                     width={1000}

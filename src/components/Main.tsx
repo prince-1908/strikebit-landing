@@ -6,7 +6,7 @@ export const Main = () => {
         <div className='grow relative px-4'>
             {/* <div className='w-[442.49px] h-[442.49px] gradient-circle rounded-full absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[-5]'></div> */}
             <Image 
-                src="/gradient-ball.png"
+                src="/gradient-ball.svg"
                 alt=''
                 height={900}
                 width={900}
@@ -21,7 +21,7 @@ export const Main = () => {
             <div className='absolute flex gap-4 left-4 bottom-4'>
                 <div className='flex justify-center items-center gap-1'>
                     <Image
-                        src="/telegram.png"
+                        src="/telegram.svg"
                         alt='telegram'
                         height={18}
                         width={18}
@@ -30,7 +30,7 @@ export const Main = () => {
                 </div>
                 <div className='flex justify-center items-center gap-1'>
                     <Image
-                        src="/twitter.png"
+                        src="/twitter.svg"
                         alt='twitter'
                         height={18}
                         width={18}
@@ -39,7 +39,7 @@ export const Main = () => {
                 </div>
                 <div className='flex justify-center items-center gap-1'>
                     <Image
-                        src="/medium.png"
+                        src="/medium.svg"
                         alt='medium'
                         height={18}
                         width={18}
@@ -48,7 +48,7 @@ export const Main = () => {
                 </div>
                 <div className='flex justify-center items-center gap-1'>
                     <Image
-                        src="/discord.png"
+                        src="/discord.svg"
                         alt='discord'
                         height={18}
                         width={18}
