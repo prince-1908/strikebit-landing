@@ -2,7 +2,6 @@
 import * as React from 'react';
 import Image from 'next/image'
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
 import { Menu, X, MoveRight } from 'lucide-react';
 
 export const Navbar = () => {
