@@ -39,7 +39,7 @@ export const Navbar = () => {
     }
 
     const list = () => (
-        <div className='text-white'>
+        <div className='text-white w-screen md:w-auto'>
             <div className='flex justify-between items-center px-4'>
                 <Image
                     src="/logo1.png"
@@ -49,7 +49,7 @@ export const Navbar = () => {
                 />
                 <div className=''>
                     <button
-                        className='gap-[10px] flex justify-center items-center bg-white text-blue px-7 py-4'
+                        className='gap-[10px] flex justify-center items-center bg-white text-blue px-[20px] py-[15px] xl:px-7 xl:py-4'
                         onClick={closeDrawer}
                     >
                         <p className='flex items-center justify-center font-semibold'>Close</p>
@@ -58,7 +58,7 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-2 grid-rows-3 text-4xl px-16 py-16 gap-8 font-semibold'>
+            <div className='grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 text-4xl px-2 md:px-16 md:py-16 gap-8 font-semibold'>
                 <div className='flex items-center gap-4 cursor-pointer bg-blue-light-hover py-2 px-4 rounded-md transition' onClick={() => handleNavigation("about")}>
                     <p>About</p>
                     <MoveRight size={32} strokeWidth={3} />
@@ -84,11 +84,19 @@ export const Navbar = () => {
                     <MoveRight size={32} strokeWidth={3} />
                 </div>
             </div>
+
+            <div className='px-8 py-8'>
+                <button
+                    className='text-white  rounded-none border border-white/20 py-[15px] w-full'
+                >
+                    中文
+                </button>
+            </div>
         </div>
     );
 
     return (
-        <div className='flex justify-between items-center px-4'>
+        <div className='flex justify-between items-center py-0 px-4'>
             <Image
                 src="/logo1.png"
                 alt='strikebit-logo-1'
@@ -98,13 +106,13 @@ export const Navbar = () => {
 
             <div className='flex gap-4'>
                 <button
-                    className='text-white flex gap-[10px] rounded-none border border-white/20 px-7 py-4'
+                    className='text-white hidden sm:flex gap-[10px] rounded-none border border-white/20 px-[20px] py-[15px] xl:px-7 xl:py-4'
                 >
                     中文
                 </button>
 
                 <button
-                    className='gap-[10px] flex justify-center items-center blue-btn'
+                    className='gap-[10px] rounded-none flex justify-center items-center blue-btn'
                     onClick={toggleDrawer(true)}
                 >
                     <p className='flex items-center justify-center font-semibold'>Menu</p>

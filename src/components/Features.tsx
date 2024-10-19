@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 export const Features = () => {
     return (
-        <div id='features'>
-            <div className="h-screen flex justify-center items-center">
-                <div className='w-full h-full flex'>
-                    <div className='flex flex-col justify-center items-start gap-4 w-1/2 pl-32 px-8'>
+        <div id='features' className='overflow-x-hidden py-12 md:py-0'>
+            <div className="xl:h-screen flex justify-center items-center">
+                <div className='w-full h-full flex flex-col sm:flex-row'>
+                    <div className='flex flex-col justify-center items-start gap-4 w-full sm:w-1/2 md:pl-16 lg:pl-24 xl:pl-32 px-8'>
                         <h1 className='font-semibold text-5xl'>
-                            StrikeBit: <span className='gradient-text-1 '>Pulse</span>
+                            StrikeBit: <span className='gradient-text-1'>Pulse</span>
                         </h1>
                         <p>Pulse is a community-driven Telegram bot designed to engage options traders with daily challenges, real-time analytics, and educational tools. The bot offers users interactive features such as options strategy tips, market sentiment polls, and a leaderboard system that rewards participation with tokens.</p>
                     </div>
@@ -30,8 +30,9 @@ export const Features = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-screen flex justify-center items-center">
-                <div className='w-full h-full flex'>
+
+            <div className="my-32 xl:my-0 xl:h-screen flex justify-center items-center">
+                <div className='w-full h-full flex flex-col-reverse sm:flex-row'>
                     <div className='relative grow'>
                         <Image
                             src="/feature2.svg"
@@ -48,11 +49,11 @@ export const Features = () => {
                             alt=""
                             height={1000}
                             width={1000}
-                            className='w-[200%] h-[200%] absolute rotate-12 -left-40 bottom-[-700px]'
+                            className='w-[200%] h-[200%] absolute rotate-12 -left-24 md:-left-44 xl:-left-40 bottom-[-200px] sm:bottom-[-400px] xl:bottom-[-700px]'
                         />
                     </div>
 
-                    <div className='flex flex-col justify-center items-start gap-4 w-1/2 pr-32 px-8'>
+                    <div className='flex flex-col justify-center items-start gap-4 w-full sm:w-1/2 md:pr-16 lg:pr-24 xl:pr-32 px-8'>
                         <h1 className='font-semibold text-5xl'>
                             StrikeBit: <span className='gradient-text-1 '>Vates</span>
                         </h1>
@@ -60,9 +61,10 @@ export const Features = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-screen flex justify-center items-center">
-                <div className='w-full h-full flex'>
-                    <div className='flex flex-col justify-center items-start gap-4 w-1/2 pl-32 px-8'>
+
+            <div className="xl:h-screen flex justify-center items-center">
+                <div className='w-full h-full flex flex-col sm:flex-row gap-8 sm:gap-0'>
+                    <div className='flex flex-col justify-center items-start gap-4 w-full sm:w-1/2 md:pl-16 lg:pl-24 xl:pl-32 px-8'>
                         <h1 className='font-semibold text-5xl'>
                             StrikeBit: <span className='gradient-text-1 '>Scope</span>
                         </h1>
@@ -84,7 +86,7 @@ export const Features = () => {
                             alt=""
                             height={1000}
                             width={1000}
-                            className='w-[125%] h-[125%] absolute right-[-175px] top-[-400px]'
+                            className='w-[125%] h-[125%] absolute right-[-100px] md:right-[-175px] top-[-100px] sm:top-[-150px] md:top-[-200px] xl:top-[-400px]'
                         />
                     </div>
                 </div>

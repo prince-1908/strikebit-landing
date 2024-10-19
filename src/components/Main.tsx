@@ -4,7 +4,6 @@ import Image from 'next/image'
 export const Main = () => {
     return (
         <div className='grow relative px-4'>
-            {/* <div className='w-[442.49px] h-[442.49px] gradient-circle rounded-full absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[-5]'></div> */}
             <Image 
                 src="/gradient-ball.svg"
                 alt=''
@@ -14,11 +13,11 @@ export const Main = () => {
             />
 
             <div className='absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-128%] flex justify-center items-center flex-col gap-8'>
-                <h1 className='text-7xl tracking-[45px] ml-[15px]'>STRIKEBIT</h1>
-                <p className='font-semibold'>Reinventing interactions with Crypto Options</p>
+                <h1 className='text-3xl md:text-5xl lg:text-7xl tracking-[20px] sm:tracking-[45px] ml-[25px] lg:ml-[15px]'>STRIKEBIT</h1>
+                <p className='text-sm sm:text-base font-semibold'>Reinventing interactions with Crypto Options</p>
             </div>
 
-            <div className='absolute flex gap-4 left-4 bottom-4'>
+            <div className='absolute w-full sm:w-auto grid grid-cols-2 sm:flex gap-4 left-0 bottom-32 sm:left-4 sm:bottom-4'>
                 <div className='flex justify-center items-center gap-1'>
                     <Image
                         src="/telegram.svg"

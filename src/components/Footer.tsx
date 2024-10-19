@@ -13,9 +13,9 @@ export const Footer = () => {
     }
 
     return (
-        <div className='bg-blue p-16'>
-            <div className='grid grid-cols-2 grid-rows-2'>
-                <div className=''>
+        <div className='bg-blue p-4 md:p-16'>
+            <div className='grid grid-cols-2 grid-rows-2 gap-12 sm:gap-0'>
+                <div className='hidden sm:block'>
                     <Image
                         src="/logo2.png"
                         alt='strikebit'
@@ -24,11 +24,12 @@ export const Footer = () => {
                         className=''
                     />
                 </div>
-                <div className='flex items-center justify-end'>
+                <div className='flex items-center justify-center sm:justify-end col-span-2 sm:col-span-1'>
                     <button className='white-btn'>Purchasee Node</button>
                 </div>
-                <div className='flex items-end'>
-                    <ul className='flex gap-4'>
+
+                <div className='flex items-center lg:items-end col-span-2 lg:col-span-1'>
+                    <ul className='flex flex-wrap justify-center gap-4'>
                         <li className='cursor-pointer hover:bg-white hover:text-blue-500 transition px-4 py2 rounded-md' onClick={() => handleNavigation("about")}>About</li>
                         <li className='cursor-pointer hover:bg-white hover:text-blue-500 transition px-4 py2 rounded-md' onClick={() => handleNavigation("product")}>Product</li>
                         <li className='cursor-pointer hover:bg-white hover:text-blue-500 transition px-4 py2 rounded-md' onClick={() => handleNavigation("features")}>Features</li>
@@ -37,7 +38,7 @@ export const Footer = () => {
                         <li className='cursor-pointer hover:bg-white hover:text-blue-500 transition px-4 py2 rounded-md' onClick={() => handleNavigation("roadmap")}>Roadmap</li>
                     </ul>
                 </div>
-                <div className='flex gap-8 justify-end items-end'>
+                <div className='flex gap-8 justify-center lg:justify-end items-end col-span-2 lg:col-span-1'>
                     <Image
                         src="/telegram.svg"
                         alt='telegram'
@@ -61,6 +62,16 @@ export const Footer = () => {
                         alt='discord'
                         height={25}
                         width={25}
+                    />
+                </div>
+
+                <div className='sm:hidden col-span-2 flex justify-center'>
+                    <Image
+                        src="/logo2.png"
+                        alt='strikebit'
+                        height={100}
+                        width={100}
+                        className=''
                     />
                 </div>
             </div>

@@ -61,15 +61,69 @@ body {
 .white-btn {
   background-color: white;
   color: #1214fd;
-  padding: 10px 20px;
+  padding: 7.5px 15px;
   font-weight: 700;
 }
 
-.blue-btn{
+@media (min-width: 768px) {
+  .white-btn {
+    background-color: white;
+    color: #1214fd;
+    padding: 7.5px 15px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1024px) {
+  .white-btn {
+    background-color: white;
+    color: #1214fd;
+    padding: 7.5px 15px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1280px) {
+  .white-btn {
+    background-color: white;
+    color: #1214fd;
+    padding: 10px 20px;
+    font-weight: 700;
+  }
+}
+
+.blue-btn {
   background-color: #1214fd;
   color: white;
-  padding: 10px 20px;
+  padding: 7.5px 15px;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .blue-btn {
+    background-color: #1214fd;
+    color: white;
+    padding: 7.5px 15px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blue-btn {
+    background-color: #1214fd;
+    color: white;
+    padding: 7.5px 15px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1280px) {
+  .blue-btn {
+    background-color: #1214fd;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+  }
 }
 
 .light-gradient {
