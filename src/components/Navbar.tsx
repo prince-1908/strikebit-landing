@@ -3,6 +3,7 @@ import * as React from 'react';
 import Image from 'next/image'
 import Drawer from '@mui/material/Drawer';
 import { Menu, X, MoveRight } from 'lucide-react';
+import Link from 'next/link';
 
 export const Navbar = () => {
 
@@ -85,12 +86,14 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className='px-8 py-8'>
-                <button
-                    className='text-white  rounded-none border border-white/20 py-[15px] w-full'
+            <div className='flex justify-center items-center sm:hidden px-8 py-8 w-full'>
+                <Link
+                    href="https://app.strikebit.net/"
+                    target='_blank'
+                    className='text-white rounded-none border text-center border-white/20 py-[15px] w-full'
                 >
-                    中文
-                </button>
+                    Try Our MVP
+                </Link>
             </div>
         </div>
     );
@@ -105,11 +108,14 @@ export const Navbar = () => {
             />
 
             <div className='flex gap-4'>
-                <button
+                <Link
+                    href="https://app.strikebit.net/"
+                    target='_blank'
                     className='text-white hidden sm:flex gap-[10px] rounded-none border border-white/20 px-[20px] py-[15px] xl:px-7 xl:py-4'
+
                 >
-                    中文
-                </button>
+                    Try Our MVP
+                </Link>
 
                 <button
                     className='gap-[10px] rounded-none flex justify-center items-center blue-btn'

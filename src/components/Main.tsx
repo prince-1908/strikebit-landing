@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const Main = () => {
     return (
@@ -18,7 +19,7 @@ export const Main = () => {
             </div>
 
             <div className='absolute w-full sm:w-auto grid grid-cols-2 sm:flex gap-4 left-0 bottom-32 sm:left-4 sm:bottom-4'>
-                <div className='flex justify-center items-center gap-1'>
+                <Link href="https://t.me/+PWmB7O5jhO5mNmVl" target='_blank' className='flex justify-center items-center gap-1'>
                     <Image
                         src="/telegram.svg"
                         alt='telegram'
@@ -26,8 +27,8 @@ export const Main = () => {
                         width={18}
                     />
                     <p>Telegram</p>
-                </div>
-                <div className='flex justify-center items-center gap-1'>
+                </Link>
+                <Link href="https://x.com/StrikeBitDeFI" target='_blank' className='flex justify-center items-center gap-1'>
                     <Image
                         src="/twitter.svg"
                         alt='twitter'
@@ -35,8 +36,8 @@ export const Main = () => {
                         width={18}
                     />
                     <p>Twitter</p>
-                </div>
-                <div className='flex justify-center items-center gap-1'>
+                </Link>
+                <Link href="" className='flex justify-center items-center gap-1'>
                     <Image
                         src="/medium.svg"
                         alt='medium'
@@ -44,8 +45,8 @@ export const Main = () => {
                         width={18}
                     />
                     <p>Medium</p>
-                </div>
-                <div className='flex justify-center items-center gap-1'>
+                </Link>
+                <Link href="https://discord.gg/qkBC4muq" target='_blank' className='flex justify-center items-center gap-1'>
                     <Image
                         src="/discord.svg"
                         alt='discord'
@@ -53,7 +54,7 @@ export const Main = () => {
                         width={18}
                     />
                     <p>Discord</p>
-                </div>
+                </Link>
             </div>
         </div>
     )

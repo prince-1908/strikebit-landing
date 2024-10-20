@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Footer = () => {
     const handleNavigation = (id: string) => {
@@ -25,7 +26,7 @@ export const Footer = () => {
                     />
                 </div>
                 <div className='flex items-center justify-center sm:justify-end col-span-2 sm:col-span-1'>
-                    <button className='white-btn'>Purchasee Node</button>
+                    <button className='white-btn'>Purchase Node</button>
                 </div>
 
                 <div className='flex items-center lg:items-end col-span-2 lg:col-span-1'>
@@ -39,30 +40,38 @@ export const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex gap-8 justify-center lg:justify-end items-end col-span-2 lg:col-span-1'>
-                    <Image
-                        src="/telegram.svg"
-                        alt='telegram'
-                        height={25}
-                        width={25}
-                    />
-                    <Image
-                        src="/twitter.svg"
-                        alt='twitter'
-                        height={25}
-                        width={25}
-                    />
-                    <Image
-                        src="/medium.svg"
-                        alt='medium'
-                        height={25}
-                        width={25}
-                    />
-                    <Image
-                        src="/discord.svg"
-                        alt='discord'
-                        height={25}
-                        width={25}
-                    />
+                    <Link href="https://t.me/+PWmB7O5jhO5mNmVl" target='_blank'>
+                        <Image
+                            src="/telegram.svg"
+                            alt='telegram'
+                            height={25}
+                            width={25}
+                        />
+                    </Link>
+                    <Link href="https://x.com/StrikeBitDeFI" target='_blank'>
+                        <Image
+                            src="/twitter.svg"
+                            alt='twitter'
+                            height={25}
+                            width={25}
+                        />
+                    </Link>
+                    <Link href="" target='_blank'>
+                        <Image
+                            src="/medium.svg"
+                            alt='medium'
+                            height={25}
+                            width={25}
+                        />
+                    </Link>
+                    <Link href="https://discord.gg/qkBC4muq" target='_blank'>
+                        <Image
+                            src="/discord.svg"
+                            alt='discord'
+                            height={25}
+                            width={25}
+                        />
+                    </Link>
                 </div>
 
                 <div className='sm:hidden col-span-2 flex justify-center'>

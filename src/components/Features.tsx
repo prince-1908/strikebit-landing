@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const Features = () => {
     return (
@@ -10,7 +11,7 @@ export const Features = () => {
                         <h1 className='font-semibold text-5xl'>
                             StrikeBit: <span className='gradient-text-1'>Pulse</span>
                         </h1>
-                        <p>Pulse is a community-driven Telegram bot designed to engage options traders with daily challenges, real-time analytics, and educational tools. The bot offers users interactive features such as options strategy tips, market sentiment polls, and a leaderboard system that rewards participation with tokens.</p>
+                        <p>Pulse is a community-driven Telegram bot designed to engage options traders with daily challenges, real-time analytics, and educational tools. The bot offers users interactive features such as options strategy tips, market sentiment polls, and a leaderboard system that rewards participation with tokens. Join aur <Link href="https://t.me/+PWmB7O5jhO5mNmVl" target='_blank' className='gradient-text-1'>Telegram group</Link> to experience our Pulse bot</p>
                     </div>
                     <div className='relative grow'>
                         <Image

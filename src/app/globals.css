@@ -142,3 +142,24 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgb(67, 77, 174);
+  background: linear-gradient(135deg, rgba(67, 77, 174, 1) 0%, rgba(40, 126, 176, 1) 100%);
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgb(67, 77, 174);
+  background: linear-gradient(135deg, rgba(67, 77, 174, 1) 0%, rgba(40, 126, 176, 1) 100%);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
