@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useState } from 'react';
 
 export const Product = () => {
-    const [selectedButton, setSelectedButton] = useState(0);
+    const [selectedButton, setSelectedButton] = useState(1);
 
     const buttons = [
         { id: 1, text: 'Options Trading', shortText: 'Options' },
