@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const Technology = () => {
     return (
-        <div className='xl:h-screen flex justify-center items-center p-4 sm:p-16 md:p-32 xl:p-64 my-32 xl:my-0' id='technology'>
+        <div className='xl:h-screen flex justify-center items-center p-4 sm:p-16 md:p-32 xl:py-64 xl:px-32 my-32 xl:my-0' id='technology'>
             <div className='h-full w-full gap-8 lg:gap-0 flex flex-col lg:flex-row justify-between'>
                 <div className='w-full xl:w-1/2  flex flex-col justify-center items-start gap-8 lg:gap-4'>
                     <h1 className='text-5xl xl:text-7xl w-full text-center lg:text-left font-semibold'>Technology</h1>

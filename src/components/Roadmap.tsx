@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const Roadmap = () => {
     return (
-        <div className='xl:h-screen flex justify-center items-center my-24 xl:my-0 px-4 py-16 sm:p-16 xl:px-24  xl:py-32' id='roadmap'>
+        <div className='xl:h-screen flex justify-center items-center my-24 xl:my-0 px-4 py-16 sm:p-16 xl:px-32  xl:py-32' id='roadmap'>
             <div className='w-full h-full flex flex-col gap-16'>
                 <h1 className='text-5xl xl:text-7xl font-semibold'>Roadmap</h1>
                 <div className='grow w-full overflow-x-auto custom-scrollbar'>
